@@ -89,7 +89,7 @@
     color: var(--highlight-color-1);
     border-bottom: 0.25rem solid var(--highlight-color-2);
   }
-  
+
   .main {
     width: 100%;
     display: flex;
@@ -399,4 +399,20 @@
     color: var(--highlight-color-1);
     text-decoration: none;
   }
+   @media (min-width: 854px) {
+    .header-nav__menu-icon {
+      display: none;
+    }
   
+    .header-nav__link-list {
+      position: static;
+      flex-direction: row;
+      width: auto;
+      background-color: inherit;
+    }
+  
+    .header-nav__link {
+      font-size: 1rem;
+      color: var(--text-color);
+    }
+}
